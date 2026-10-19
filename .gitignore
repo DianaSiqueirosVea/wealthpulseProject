@@ -5,10 +5,11 @@ node_modules/
 dist/
 
 # Playwright
-test-results/
-playwright-report/
-blob-report/
-playwright/.cache/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
 
 # Logs & env
 *.log
