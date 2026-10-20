@@ -23,7 +23,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['@muuktest/amikoo-reporter', { amikooKey: process.env.AMIKOO_KEY || 'hw66ar2jv7aoacjwg7pmtr-mvj1gpbyke6p02013efyk-dwa865hdw3bp3l5srxqho-va0wcr19z4phfvczmkaq78' }], ['html']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
