@@ -26,6 +26,7 @@ export default defineConfig({
   reporter: [['@muuktest/amikoo-reporter', { amikooKey: process.env.AMIKOO_KEY || 'hw66ar2jv7aoacjwg7pmtr-mvj1gpbyke6p02013efyk-dwa865hdw3bp3l5srxqho-va0wcr19z4phfvczmkaq78' }], ['html']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    video: 'on',
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'http://localhost:5173',
 
